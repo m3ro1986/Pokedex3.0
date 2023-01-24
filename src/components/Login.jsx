@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { getName } from '../store/slices/userName';
 import ash from '../assets/images/Ash-Pokemon.png';
 import logo from '../assets/images/pokemonlogo.png';
+import pokebola from '../assets/images/pokebola.png';
 
 const Login = () => {
 
@@ -30,7 +31,9 @@ const Login = () => {
                     value={userName} 
                     onChange={ e => dispatch( getName( e.target.value )) }
                 />
-                <button onClick={ () => navigate('/pokedex') }>Start</button>
+                <button onClick={ () => navigate('/pokedex') }>
+                    <img className='startButton' src={ pokebola } alt="" />
+                </button>
             </div>
         </div>
     );
