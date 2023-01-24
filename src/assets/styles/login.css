@@ -40,7 +40,8 @@
 }
 
 .login-box_input-box button {
-    height: 100%;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
     border: none;
     position: absolute;
