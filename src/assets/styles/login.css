@@ -21,3 +21,21 @@
     height: 100%;
 }
 
+.login-box_input-box {
+    background-color: yellow;
+    border-radius: 1rem;
+}
+.login-box_input-box input {
+    font-family: 'Sigmar One', cursive;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: yellow;
+    border: none;
+    outline: none;
+}
+
+.login-box_input-box button {
+    border-radius: 1rem;
+}
+

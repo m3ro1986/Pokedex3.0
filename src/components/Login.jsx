@@ -23,7 +23,7 @@ const Login = () => {
                 <img src={ ash } alt="" />
             </div>
             <h2>Hello trainer!!!</h2>
-            <h4>Give your name to start</h4>
+            <h3>Give your name to start</h3>
             <div className='login-box_input-box'>
                 <input 
                     type="text"
