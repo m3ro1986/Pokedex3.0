@@ -6,7 +6,7 @@ import Pokecard from './Pokecard';
 
 const Pokedex = () => {
 
-    
+   
     const userName = useSelector( state => state.userName )
     const navigate = useNavigate();
     const [ pokename, setPokename ] = useState('')
