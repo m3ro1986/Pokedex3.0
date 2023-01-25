@@ -22,7 +22,14 @@ const Pokedex = () => {
     const getPokemons = () => { axios.get('https://pokeapi.co/api/v2/pokemon/?limit=1279').then(res => setPokemons(res.data.results)); };
     const getPoketypes = () => { axios.get('https://pokeapi.co/api/v2/type/').then(res => setPoketypes(res.data.results)); };
     const getPoketype = (path) => { axios.get(path).then(res => setPokemons(res.data.pokemon)) };
-    const filterTypes = (e) => { e.target.value === 'all' ? getPokemons() : getPoketype(e.target.value) };
+    const filterTypes = (e) => {
+        if (e.target.value === 'all') {
+            getPokemons();
+        } else {
+            getPoketype(e.target.value);
+        };
+        setPage(0);
+     };
     const lastPage = () => { if (page > 0) { setPage((page - quantity < 0) ? 0 : page - quantity); setLimit(limit - quantity); } };
     const nextPage = () => { if (limit < pokemons.length) { setPage((page + quantity > pokemons.length) ? page : page + quantity); setLimit((page + quantity) + quantity); } };
     const changeQuantity = (n) => { setQuantity(n) };
@@ -31,10 +38,7 @@ const Pokedex = () => {
     useEffect(() => { getPokemons(); getPoketypes() }, []);
     // useEffect( () => getPoketypes(), []);
 
-    // console.log( pokemons )
 
-
-    console.log( typeName )
 
     return (
         <div className='pokedex-box'>
@@ -62,6 +66,7 @@ const Pokedex = () => {
                     ))
                 }
             </select>
+
             <h3> Pokemones: {pokemons.length} </h3>
             <div className='pokedex-box_pokelist'>
                 {

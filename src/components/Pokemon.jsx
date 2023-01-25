@@ -13,7 +13,7 @@ const Pokemon = () => {
         axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`).then( res => setPokemon( res.data ))
     },[])
 
-    console.log( pokemon )
+    // console.log( pokemon )
 
     return (
         <div className='pokemon-box'>
