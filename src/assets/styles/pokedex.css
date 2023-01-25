@@ -27,7 +27,7 @@
     align-items: center;
     justify-items: center;
     position: relative;
-    background-color: yellow;
+    background-color: rgb(228, 227, 227);
     border-radius: 3rem;
     height: 2rem;
     border: 1px solid var(--blue);
@@ -38,7 +38,7 @@
     font-size: 1rem;
     text-align: center;
     border-radius: 1rem;
-    background-color: yellow;
+    background-color: rgb(228, 227, 227);
     /* background: linear-gradient(176.37deg, #f9df6d -32.26%, #e3c625 22.55%, #f1d324 125.72%); */
     color: var(--blue);
     border: none;
@@ -118,7 +118,7 @@
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: rgb(228, 227, 227);
     border: 2px solid var(--blue);
 
 }
