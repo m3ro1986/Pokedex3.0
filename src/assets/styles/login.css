@@ -81,7 +81,7 @@
     align-items: center;
     justify-items: center;
     position: relative;
-    background-color: yellow;
+    background-color: rgb(228, 227, 227);
     border-radius: 3rem;
     height: 2.5rem;
     border: 3px solid var(--blue);
@@ -91,7 +91,7 @@
     font-size: 1rem;
     text-align: center;
     border-radius: 1rem;
-    background-color: yellow;
+    background-color: rgb(228, 227, 227);
     color: var(--blue);
     border: none;
     outline: none;
