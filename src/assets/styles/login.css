@@ -23,20 +23,24 @@
 
 .login-box_input-box {
     display: flex;
+    align-items: center;
+    justify-items: center;
     position: relative;
     background-color: yellow;
-    border-radius: 1rem;
-    height: 2rem;
-    /* border: 1px solid black; */
+    border-radius: 3rem;
+    height: 2.5rem;
+    border: 3px solid var(--blue);
 }
 .login-box_input-box input {
     font-family: 'Sigmar One', cursive;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
     border-radius: 1rem;
     background-color: yellow;
+    color: var(--blue);
     border: none;
     outline: none;
+    
 }
 
 .login-box_input-box button {
@@ -50,8 +54,9 @@
 }
 
 .login-box_input-box button:hover {
-    border: 1px solid;
-    
+    cursor: pointer;
+    height: 2.2rem;
+    width: 2.2rem;   
 }
 
 .startButton {

@@ -1,11 +1,18 @@
 :root {
     font-family: 'Sigmar One', cursive;
+    --blue: rgb( 54,99,153);
+    --yellow: rgb(180,141,48);
+    color: var(--blue);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+li {
+  list-style: none;
 }
 
 

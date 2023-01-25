@@ -1,0 +1,133 @@
+.pokedex-box {
+    position: relative;
+    min-width: 350px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.pokedex-box_title {
+    height: 5rem;
+    margin-bottom: 2rem;
+}
+
+.pokedex-box_title img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.pokedex-box_input-box {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    background-color: yellow;
+    border-radius: 3rem;
+    height: 2rem;
+    border: 3px solid var(--blue);
+}
+
+.pokedex-box_input-box input {
+    font-family: 'Sigmar One', cursive;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: yellow;
+    color: var(--blue);
+    border: none;
+    outline: none;
+    
+}
+
+.pokedex-box_input-box button {
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    right: 0;
+
+}
+
+.pokedex-box_input-box button:hover {
+    cursor: pointer;
+    height: 1.8rem;
+    width: 1.8rem;   
+}
+
+.goButton {
+    font-family: 'Sigmar One', cursive;
+    background-color: var(--blue);
+    color: white;
+}
+
+.filter-box {
+    position: absolute;
+    margin: 2rem 0;
+    right: 0;
+    font-family: 'Sigmar One', cursive;
+    color: var(--blue);
+    border-radius: 1rem;
+    outline: none;
+}
+
+.pokedex-box_config {
+    position:absolute;
+    margin-top: 5rem;
+    right: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.pokedex-box_config button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--blue);
+    /* font-family: 'Sigmar One', cursive; */
+    color: white;
+}
+
+.pokedex-box_config button:hover {
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+
+.pokedex-box_pokelist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.buttons-box{
+    margin-top: 1rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.buttons-box_b{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 2px solid var(--blue);
+
+}
+
+.buttons-box_b:hover{
+    cursor: pointer;
+    border: 4px solid var(--blue);
+}
+
+.bx{
+    font-size: 3rem;
+    color: var(--blue);
+}

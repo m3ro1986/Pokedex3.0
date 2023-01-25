@@ -14,6 +14,7 @@ const Pokemon = () => {
     return (
         <div>
             { pokemon.name }
+            { pokemon.types?.[0].type.name }
         </div>
     );
 };
