@@ -13,6 +13,61 @@
 
 .img1 {
     height: 8rem;
+    animation: appear 1s 1; 
+}
+
+@keyframes appear {
+  0%{
+    transform: translatex(-350px);
+  }
+
+  /* 50%{  
+    transform: translateY(-50px);
+  } */
+
+  100%{
+    transform: translatex(0px);
+  }
+}
+
+.img2 {
+    /* height: 8rem; */
+    animation: appear2 1s 1; 
+}
+
+@keyframes appear2 {
+  0%{
+    transform: translatex(350px);
+  }
+
+  /* 50%{  
+    transform: translateY(-50px);
+  } */
+
+  100%{
+    transform: translatex(0px);
+  }
+}
+
+.greeting{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: appear3 1s 1;
+}
+
+@keyframes appear3 {
+  0%{
+    transform: translatey(350px);
+  }
+
+  /* 50%{  
+    transform: translateY(-50px);
+  } */
+
+  100%{
+    transform: translatey(0px);
+  }
 }
 
 .login-box_img-box img {

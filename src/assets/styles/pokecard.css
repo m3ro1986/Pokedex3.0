@@ -14,7 +14,8 @@
     cursor: pointer;
     box-shadow: 3px 3px 5px grey;
     /* transform: scale(1.05); */
-    transform: rotate(5deg)
+    transform: rotate(5deg);
+    
 }
 
 .pokecard-box-img {
@@ -25,8 +26,10 @@
     margin: auto;
     height: 4rem;
     width: 4rem;
+    /* animation: loader 1s infinite ; */
     
 }
+
 
 .pokeinfo {
     background-color: white;

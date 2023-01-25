@@ -10,7 +10,7 @@ import pokebola from '../assets/images/pokebola.png';
 
 const Login = () => {
 
-    const userName = useSelector( state => state.userName );
+    const userName = useSelector(state => state.userName);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -20,20 +20,22 @@ const Login = () => {
             <div className='login-box_img-box img1'>
                 <img src={logo} alt="" />
             </div>
-            <div className='login-box_img-box'>
-                <img src={ ash } alt="" />
+            <div className='login-box_img-box img2'>
+                <img src={ash} alt="" />
             </div>
-            <h2>Hello trainer!!!</h2>
-            <h3>Give your name to start</h3>
-            <div className='login-box_input-box'>
-                <input 
-                    type="text"
-                    value={userName} 
-                    onChange={ e => dispatch( getName( e.target.value )) }
-                />
-                <button onClick={ () => navigate('/pokedex') }>
-                    <img className='startButton' src={ pokebola } alt="" />
-                </button>
+            <div className='greeting'>
+                <h2>Hello trainer!!!</h2>
+                <h3>Give your name to start</h3>
+                <div className='login-box_input-box'>
+                    <input
+                        type="text"
+                        value={userName}
+                        onChange={e => dispatch(getName(e.target.value))}
+                    />
+                    <button onClick={() => navigate('/pokedex')}>
+                        <img className='startButton' src={pokebola} alt="" />
+                    </button>
+                </div>
             </div>
         </div>
     );
