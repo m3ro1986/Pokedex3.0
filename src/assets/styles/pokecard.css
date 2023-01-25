@@ -4,7 +4,7 @@
     height: 11rem;
     width: 10rem;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 1rem;
     padding-top: 3rem;
     background-color: aqua;
@@ -13,6 +13,8 @@
 .pokecard-box:hover{
     cursor: pointer;
     box-shadow: 3px 3px 5px grey;
+    /* transform: scale(1.05); */
+    transform: rotate(5deg)
 }
 
 .pokecard-box-img {
@@ -23,6 +25,7 @@
     margin: auto;
     height: 4rem;
     width: 4rem;
+    
 }
 
 .pokeinfo {
