@@ -10,6 +10,11 @@
     background-color: aqua;
 }
 
+.pokecard-box:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 5px grey;
+}
+
 .pokecard-box-img {
     position: absolute;
     left: 0;
@@ -24,7 +29,16 @@
     background-color: white;
     margin: 0 5px;
     border-radius: 1rem;
+    overflow-y: auto;
 }
+
+.pokeinfo-name{
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    height: 1.5rem;
+}
+
 
 .types {
     font-family: 'Montserrat', sans-serif;
@@ -59,6 +73,14 @@
 
 .fightingfont{
     color: #96402A;
+}
+
+.flying{
+    background: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+}
+
+.flyingfont{
+    color: #735259;
 }
 
 .grass {

@@ -9,31 +9,11 @@ const Pokecard = ({ url }) => {
 
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const typesNames = {
-        'normal': 'normal',
-        "fighting": "fighting",
-        "flying":"flying",
-        "poison":"poison",
-        "ground":"ground",
-        "rock":"rock",
-        "bug":"bug",
-        "ghost":"ghost",
-        "steel":"steel",
-        "fire":"fire",
-        "water":"water",
-        "grass":"grass",
-        "electric":"electric",
-        "psychic":"psychic",
-        "ice":"ice",
-        "dragon":"dragon",
-        "dark":"dark",
-        "fairy":"fairy"
-    }
     const [ classType, setclassType ] = useState('')
     const [pokemon, setPokemon] = useState({});
     const getPokemon = () => { axios.get(url).then(res => setPokemon(res.data)) }
 
-    useEffect(() => getPokemon(), [])
+    useEffect(() => {getPokemon()}, [])
     // console.log(pokemon)
 
     const goPokemon = () => {
@@ -42,14 +22,16 @@ const Pokecard = ({ url }) => {
 
 
 
-    // console.log( pokemon )
+
 
 
     return (
         <div className={`pokecard-box ${ pokemon.types?.[0].type.name }`} onClick={goPokemon}>
             <img className='pokecard-box-img' src={pokemon.sprites?.other.dream_world.front_default} alt="" />
             <div className='pokeinfo'>
-                <h4 className={`${ pokemon.types?.[0].type.name }font`}> {pokemon.name} </h4>
+                <div className='pokeinfo-name'>
+                    <h5 className={`${ pokemon.types?.[0].type.name }font`}> {pokemon.name} </h5>
+                </div>
                 <ul className={`types ${ pokemon.types?.[0].type.name }font`}>
                     {
                         pokemon.types?.map(e => (

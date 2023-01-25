@@ -17,6 +17,7 @@ const Pokedex = () => {
     const [quantity, setQuantity] = useState(8);
     const [page, setPage] = useState(0);
     const [limit, setLimit] = useState(page + quantity);
+    const [typeName, settypeName] = useState('');
 
     const getPokemons = () => { axios.get('https://pokeapi.co/api/v2/pokemon/?limit=1279').then(res => setPokemons(res.data.results)); };
     const getPoketypes = () => { axios.get('https://pokeapi.co/api/v2/type/').then(res => setPoketypes(res.data.results)); };
@@ -31,6 +32,9 @@ const Pokedex = () => {
     // useEffect( () => getPoketypes(), []);
 
     // console.log( pokemons )
+
+
+    console.log( typeName )
 
     return (
         <div className='pokedex-box'>
@@ -69,8 +73,8 @@ const Pokedex = () => {
                 }
             </div>
             <div className='buttons-box'>
-                <button className='buttons-box_b' onClick={lastPage}><i class='bx bxs-left-arrow'></i></button>
-                <button className='buttons-box_b' onClick={nextPage}><i class='bx bxs-right-arrow' ></i></button>
+                <button className='buttons-box_b' onClick={lastPage}><i className='bx bxs-left-arrow'></i></button>
+                <button className='buttons-box_b' onClick={nextPage}><i className='bx bxs-right-arrow' ></i></button>
             </div>
             <div className='pokedex-box_config'>
                 <h3>Config</h3>
